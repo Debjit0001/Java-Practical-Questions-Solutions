@@ -1,10 +1,9 @@
-package JAVA_PROGRAM_CLG;
-
 public class PrimeNonFibonacci {
     public static void main(String[] args) {
         int count = 0;
         int number = 2;
 
+        System.out.println("First 100 Prime, non-Fibonacci numbers are: ");
         while (count < 100) {
             if (isPrime(number) && !isFibonacci(number)) {
                 System.out.println(number);
