@@ -7,6 +7,7 @@ public class MultiplicationTable {
         Scanner ob = new Scanner(System.in);
         int n = ob.nextInt();
         ob.close();
+        
         System.out.println("Multiplication table is:");
         for (int i = 1; i <= 10; i++) {
             System.out.print(n + "\t");
