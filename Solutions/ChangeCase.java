@@ -3,25 +3,22 @@ import java.util.Scanner;
 public class ChangeCase {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         System.out.print("Enter a line of text: ");
         String line = input.nextLine();
+        System.out.println(Upper_tolower_and_lower_toUpper(line));
         input.close();
 
-        String newLine = "";
+    }
 
-        for (int i = 0; i < line.length(); i++) {
-            char c = line.charAt(i);
-
-            if (Character.isUpperCase(c)) {
-                newLine += Character.toLowerCase(c);
-            } else if (Character.isLowerCase(c)) {
-                newLine += Character.toUpperCase(c);
+    static String Upper_tolower_and_lower_toUpper(String str) {
+        char[] arr = str.toCharArray();
+        for (int i = 0; i < arr.length; i++) {
+            if (Character.isUpperCase(arr[i])) {
+                arr[i] = Character.toLowerCase(arr[i]);
             } else {
-                newLine += c;
+                arr[i] = Character.toUpperCase(arr[i]);
             }
         }
-
-        System.out.println("Changed case: " + newLine);
+        return new String(arr);
     }
 }
