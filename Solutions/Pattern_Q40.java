@@ -11,8 +11,10 @@ class Pattern_Q40
         int col = in.nextInt();
         in.close();
 
-        for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= col; j++) {
+        for (int i = 1; i <= rows; i++) 
+        {
+            for (int j = 1; j <= col; j++) 
+            {
                 if(j%2 == 1) // when column number is odd
                     System.out.print((j/2 + 1) + " ");
                 else // when column number is even
