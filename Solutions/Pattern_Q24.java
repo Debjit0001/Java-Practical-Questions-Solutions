@@ -1,4 +1,4 @@
-public class Pattern_Example {
+public class Pattern_Q24 {
     public static void main(String[] args) {
         int n = 4; // the number of rows can also be inputted
         int num = 1;
