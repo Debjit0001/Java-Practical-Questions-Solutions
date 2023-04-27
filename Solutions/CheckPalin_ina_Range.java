@@ -19,7 +19,7 @@ public class CheckPalin_ina_Range {
 
     static boolean checkPalin(int n) {
         String str = String.valueOf(n);
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length()/2; i++) {
             if (str.charAt(i) != str.charAt(str.length() - 1 - i))
                 return false;
         }
