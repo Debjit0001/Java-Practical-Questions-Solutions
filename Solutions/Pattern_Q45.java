@@ -10,9 +10,9 @@ public class Pattern_Q45
         in.close();
 
         int n = row;
-        for(int i = 1; n>=1; i+=n, n--) {
+        for(int i = 1; n >= 1; i += n--) {
             int k = n;
-            for(int j = i; k <= row; j-=k, k++)
+            for(int j = i; k <= row; j -= k++)
                 System.out.print(j + " ");
 
             System.out.println();
