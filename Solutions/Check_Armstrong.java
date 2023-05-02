@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-class Check_Armstrong {
+class Check_Armstrong 
+{
     public static void main(String[] args) {
         Scanner ob = new Scanner(System.in);
         System.out.println("Enter an integer number:");
