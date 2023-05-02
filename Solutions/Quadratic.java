@@ -1,5 +1,3 @@
-package Whatever;
-
 import java.util.Scanner;
 
 public class Quadratic {
