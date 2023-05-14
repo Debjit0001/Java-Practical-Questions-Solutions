@@ -6,10 +6,9 @@ public class OctalToHexadecimal {
 
         System.out.print("Enter an octal number: ");
         String octalStr = input.nextLine();
-
+        input.close();
        
         int decimal = Integer.parseInt(octalStr, 8);
-
       
         String hexadecimal = Integer.toHexString(decimal);
 

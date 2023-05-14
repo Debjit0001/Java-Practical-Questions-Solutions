@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Figure2 {
+class Figure2 {
     public static void main(String[] args) {
         new MyFrame();
     }
