@@ -22,7 +22,7 @@ public class MatrixMultiplication {
                 B[i][j] = scanner.nextInt();
             }
         }
-
+        scanner.close();
         
         int[][] C = new int[3][4];
         for (int i = 0; i < 3; i++) {

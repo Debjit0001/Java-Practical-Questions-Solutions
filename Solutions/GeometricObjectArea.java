@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AreaOfPolygon {
+public class GeometricObjectArea {
     static Scanner ob = new Scanner(System.in);
 
     public static void main(String[] args) {
