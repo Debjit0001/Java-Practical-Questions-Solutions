@@ -1,4 +1,4 @@
-class SingleInheritance {
+public class SingleInheritance {
     public static void main(String[] args) {
         Derived ob = new Derived(); // created object of the derived class
         ob.display();// call the derived class method
@@ -7,13 +7,13 @@ class SingleInheritance {
 }
 
 class Base { // declared the base class
-    void show() {
+    public void show() {
         System.out.println("I am in Base class");
     }
 }
 
 class Derived extends Base { // declared derived class that extends the base class
-    void display() {
+    public void display() {
         System.out.println("I am in derived class");
     }
 }
