@@ -1,4 +1,4 @@
-public class SingleInheritance {
+class SingleInheritance {
     public static void main(String[] args) {
         Derived ob = new Derived(); // created object of the derived class
         ob.display();// call the derived class method
