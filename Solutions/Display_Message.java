@@ -1,34 +1,15 @@
 import java.awt.*;
-import javax.swing.*;
+import java.applet.*;
 
-public class Display_Message 
-{
-    public static void main(String[] args) {
-        new Frame();
-    }    
-}
-
-class Frame extends JFrame
-{
-    Frame() {
-        add(new Label());
-        setTitle("Displaying messege in Applet");
-        setSize(400, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setVisible(true);
-    }
-}
-
-class Label extends JLabel
-{
-    Label() {
-        setText("Hello World!");
-        setHorizontalAlignment(JLabel.CENTER);
-        setVerticalAlignment(JLabel.CENTER);
-        setFont(new Font("MV Boli", Font.PLAIN, 24));
+public class Display_Message extends Applet {
+    @Override
+    public void paint(Graphics g) {
+        g.setFont(new Font("MV Boli", Font.PLAIN, 24));
         setForeground(Color.GREEN);
         setBackground(Color.BLACK);
-        setOpaque(true);
+        /* the above 3 lines are optional */
+        g.drawString("Hello World!", 80 , 150);
     }
 }
+
+// <APPLET code="Display_Message.java" height="300" width="300"> </APPLET>
